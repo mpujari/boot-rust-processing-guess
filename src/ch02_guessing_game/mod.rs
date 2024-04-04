@@ -1,8 +1,8 @@
 // Learning Rust from https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html
 pub mod ch02_guessing_game_mod {
 
-    use std::{cmp::Ordering, io};
     use rand::Rng;
+    use std::{cmp::Ordering, io};
 
     pub fn guess_game() {
         println!("Guess the number!");
@@ -19,7 +19,7 @@ pub mod ch02_guessing_game_mod {
 
             let guess: u32 = match guess.trim().parse() {
                 Ok(num) => num,
-                Err(_) => continue
+                Err(_) => continue,
             };
 
             println!("You guessed: {guess}");
@@ -30,10 +30,8 @@ pub mod ch02_guessing_game_mod {
                     break;
                 }
                 Ordering::Greater => println!("Too big!"),
-                Ordering::Less => println!("Too small!")
+                Ordering::Less => println!("Too small!"),
             }
         }
     }
-
 }
-
