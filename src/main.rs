@@ -9,9 +9,9 @@ fn main() {
     // chapter 2, guessing game
     // guess_game();
 
-    // chapter 3, variables
+    // chapter 3.1, variables
     // code_with_variables();
 
-    // chapter 3, shadowing
+    // chapter 3.1, shadowing
     code_with_shadowing();
 }

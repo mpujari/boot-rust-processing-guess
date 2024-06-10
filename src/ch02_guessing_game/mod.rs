@@ -4,6 +4,7 @@ pub mod ch02_guessing_game_mod {
     use rand::Rng;
     use std::{cmp::Ordering, io};
 
+    #[allow(dead_code)]
     pub fn guess_game() {
         println!("Guess the number!");
         let secret_number: u32 = rand::thread_rng().gen_range(1..=100);

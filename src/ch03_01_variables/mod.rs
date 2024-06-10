@@ -4,6 +4,8 @@ pub mod ch03_01_variables_mod {
 
     const THREAD: i32 = 373737;
 
+    // 3.1
+    #[allow(dead_code)]
     pub fn code_with_variables() {
         // Variables are immutable by default
         let x: i32 = 5;
@@ -23,6 +25,7 @@ pub mod ch03_01_variables_mod {
         println!("Const is {}", THREAD);
     }
 
+    // 3.1 Shadowing
     pub fn code_with_shadowing() {
         let x = 5;
         println!("X: {}", x);
@@ -32,4 +35,8 @@ pub mod ch03_01_variables_mod {
         }
         println!("X value in after the block: {}", x);
     }
+
+
+    // 3.2 Data Type
+
 }
